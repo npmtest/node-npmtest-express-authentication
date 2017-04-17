@@ -1,1 +1,40 @@
-{     "devDependencies": {         "express-authentication": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-express-authentication",     "homepage": "https://github.com/npmtest/node-npmtest-express-authentication",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-express-authentication.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [express-authentication (v0.3.2)](https://github.com/izaakschroeder/express-authentication) [![npm package](https://img.shields.io/npm/v/npmtest-express-authentication.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-authentication) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-authentication.svg)](https://travis-ci.org/npmtest/node-npmtest-express-authentication)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "express-authentication": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-express-authentication",
+    "keywords": [
+        "coverage",
+        "test",
+        "express-authentication"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_express_authentication.js",
+    "name": "npmtest-express-authentication",
+    "nameAlias": "npmtest_express_authentication",
+    "nameOriginal": "npmtest-express-authentication",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-express-authentication.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
