@@ -1,4 +1,7 @@
-# test coverage for  [express-authentication (v0.3.2)](https://github.com/izaakschroeder/express-authentication)  [![npm package](https://img.shields.io/npm/v/npmtest-express-authentication.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-authentication) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-authentication.svg)](https://travis-ci.org/npmtest/node-npmtest-express-authentication)
+# npmtest-express-authentication
+
+#### basic test coverage for  [express-authentication (v0.3.2)](https://github.com/izaakschroeder/express-authentication)  [![npm package](https://img.shields.io/npm/v/npmtest-express-authentication.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-authentication) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-authentication.svg)](https://travis-ci.org/npmtest/node-npmtest-express-authentication)
+
 #### Unopinionated authentication middleware for express.
 
 [![NPM](https://nodei.co/npm/express-authentication.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/express-authentication)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-authentication/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-express-authentication/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-express-authentication/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-express-authentication/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-authentication/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-authentication/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-express-authentication/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-express-authentication/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-authentication/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-authentication/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-express-authentication/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-express-authentication/build/coverage.html/index.html)
 
@@ -89,7 +92,8 @@
         "spec": "NODE_PATH=lib NODE_ENV=test istanbul cover node_modules/.bin/_mocha -- --sort --recursive -r test/helpers/chai -r test/helpers/sinon -R spec test/spec",
         "test": "npm run lint && npm run spec && npm run coverage"
     },
-    "version": "0.3.2"
+    "version": "0.3.2",
+    "bin": {}
 }
 ```
 
